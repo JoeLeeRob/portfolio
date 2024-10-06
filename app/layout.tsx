@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {Reenie_Beanie} from 'next/font/google'
+import { Reenie_Beanie } from 'next/font/google'
 import Image from "next/image";
 import "./globals.css";
 
@@ -45,7 +45,6 @@ export default function RootLayout({
                 width={75}
                 height={75}
               />
-              <h1 className="text-3xl font-bold">Joseph Robinson</h1>
             </div>
             <ul className="flex gap-8 text-xl">
               <li>link1</li>
@@ -56,7 +55,7 @@ export default function RootLayout({
           </div>
           <div className="relative flex justify-center items-center p-24">
             <p className="text-6xl"><span className="line-through">Joseph</span> Robinson</p>
-            <span className="{reenieBeanie.className} absolute text-5xl top-12 left-[40%] transform rotate-[340deg]">Joe</span>
+            <span className={`${reenieBeanie.className} absolute text-7xl top-[15%] left-[40%] transform rotate-[340deg]`}>Joe</span>
           </div>
           
         </header>
