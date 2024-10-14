@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Reenie_Beanie } from 'next/font/google'
+import { Reenie_Beanie, Orbitron } from 'next/font/google'
 import Image from "next/image";
 import "./globals.css";
 
@@ -21,8 +21,13 @@ const reenieBeanie = Reenie_Beanie({
   weight: '400'
 })
 
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: '400'
+})
+
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Joe Robinson",
   description: "This is my professional portfolio.",
 };
 
@@ -36,8 +41,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="py-16 px-24">
-          <div className="flex justify-between items-center">
+        <header className="py-16 px-24 relative">
+          <div className="hero-image-wrapper">
+            <Image
+              src='/images/joe_profile_blk.jpg'
+              alt='Joe Robinson profile picture'
+              layout='fill'
+              objectFit="cover"
+            />
+          </div>
+          <div className="flex items-center gap-16">
             <div className="flex gap-4 items-center">
               <Image
                 src='/images/jr-logo.svg'
@@ -53,11 +66,12 @@ export default function RootLayout({
               <li>link4</li>
             </ul>
           </div>
-          <div className="relative flex justify-center items-center p-24">
-            <p className="text-6xl"><span className="line-through">Joseph</span> Robinson</p>
-            <span className={`${reenieBeanie.className} absolute text-7xl top-[15%] left-[40%] transform rotate-[340deg]`}>Joe</span>
+          <div className="relative flex flex-col justify-center p-24">
+            <p className={`${orbitron.className} text-[5rem] leading-[5.5rem]`}><span className="line-through">Joseph</span></p>
+            <p className={`${orbitron.className} text-[10rem] leading-[11rem]`}>Robinson</p>
+            <span className={`${reenieBeanie.className} absolute text-9xl top-[5%] left-[30%] transform rotate-[340deg]`}>Joe</span>
           </div>
-          <blockquote><p>"Code is like humor. When you have to explain it, it's bad" -Cory House</p></blockquote>
+          {/* <blockquote><p>"Code is like humor. When you have to explain it, it's bad" -Cory House</p></blockquote> */}
         </header>
         <div>
           {children}
