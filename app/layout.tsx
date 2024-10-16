@@ -67,9 +67,18 @@ export default function RootLayout({
             </ul>
           </div>
           <div className="relative flex flex-col justify-center p-24">
-            <p className={`${orbitron.className} text-[5rem] leading-[5.5rem]`}><span className="line-through">Joseph</span></p>
-            <p className={`${orbitron.className} text-[10rem] leading-[11rem]`}>Robinson</p>
-            <span className={`${reenieBeanie.className} absolute text-9xl top-[5%] left-[30%] transform rotate-[340deg]`}>Joe</span>
+            <p className={`${orbitron.className} text-[5vw] leading-[6rem] xl:text-[5vw] xl:leading-[5vw] lg:text-[4vw] lg:leading-[6vw]`}
+            >
+              <span className="line-through">Joseph</span>
+            </p>
+            <p className={`${orbitron.className} 2xl:text-[10vw] 2xl:leading-[12rem] xl:text-[8vw] xl:leading-[8rem] lg:text-[7vw] lg:leading-[7vw]`}
+            >
+              Robinson
+            </p>
+            <span className={`${reenieBeanie.className} absolute transform rotate-[340deg] 2xl:text-[6rem] 2xl:top-[5%] 2xl:left-[32%] lg:top-[20%] lg:left-[35%] lg:text-[4rem] xl:top-[10%] xl:left-[37%] xl:text-[5rem]`}
+            >
+              Joe
+            </span>
           </div>
           {/* <blockquote><p>"Code is like humor. When you have to explain it, it's bad" -Cory House</p></blockquote> */}
         </header>
