@@ -29,7 +29,6 @@ export default function Header() {
             <p className="text-6xl"><span className="line-through">Joseph</span> Robinson</p>
             <span className={`${reenieBeanie.className} absolute text-7xl top-[15%] left-[40%] transform rotate-[340deg]`}>Joe</span>
           </div>
-          <blockquote><p>"Code is like humor. When you have to explain it, it's bad" -Cory House</p></blockquote>
         </div>  
     )
 }
