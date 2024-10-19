@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const repo = 'portfolio'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
+const nextConfig = {
+    trailingSlash: true,
+    output: 'export',
+    basePath: basePath,
+    assetPrefix: assetPrefix,
+    images: {
+        unoptimized: true
+    }
+};
 
 export default nextConfig;
