@@ -52,12 +52,7 @@ export default function RootLayout({
           </div>
           <div className="flex items-center gap-16">
             <div className="flex gap-4 items-center">
-              <Image
-                src='/images/jr-logo.svg'
-                alt='Joseph Robinson Logo'
-                width={75}
-                height={75}
-              />
+            <img className="h-[75px] aspect-square" src="/images/jr-logo.svg" alt="Joseph Robinson Logo" />
             </div>
             <ul className="flex gap-8 text-xl">
               <li>link1</li>

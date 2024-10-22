@@ -11,12 +11,7 @@ export default function Header() {
         <div>
             <div className="flex justify-between items-center">
                 <div className="flex gap-4 items-center">
-                <Image
-                    src='/images/jr-logo.svg'
-                    alt='Joseph Robinson Logo'
-                    width={75}
-                    height={75}
-                />
+                <img src="/images/jr-logo.svg" alt="Joseph Robinson Logo" />
                 </div>
                 <ul className="flex gap-8 text-xl">
                 <li>link1</li>
