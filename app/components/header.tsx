@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Reenie_Beanie } from 'next/font/google'
 
 const reenieBeanie = Reenie_Beanie({
