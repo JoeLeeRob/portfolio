@@ -1,13 +1,22 @@
+
+import createMDX from '@next/mdx'
+
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-console.log('Hello!!!!!!!!', isProd)
+const nextConfig ={
+    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+}
 
-const nextConfig = {
-    basePath: isProd ? '/portfolio' : '',
-    images: {
-        loader: 'default',
-        path: isProd ? '/portfolio/' : '/'
-    }
-};
+// const nextConfig = {
+//     basePath: isProd ? '/portfolio' : '',
+//     images: {
+//         loader: 'default',
+//         path: isProd ? '/portfolio/' : '/'
+//     }
+// };
 
-export default nextConfig;
+const withMDX = createMDX({
+    // Add markdown plugins here, as desired
+  })
+
+export default withMDX(nextConfig);
