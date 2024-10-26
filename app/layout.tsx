@@ -41,19 +41,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="py-16 px-24 relative">
-          <div className="hero-image-wrapper">
-            <Image
-              src='/images/joe_profile_blk.jpg'
-              alt='Joe Robinson profile picture'
-              layout='fill'
-              objectFit="cover"
-            />
-          </div>
+        <header className="py-8 px-24">
           <div className="flex items-center gap-16">
-            <div className="flex gap-4 items-center">
             <img className="h-[75px] aspect-square" src="/images/jr-logo.svg" alt="Joseph Robinson Logo" />
-            </div>
             <ul className="flex gap-8 text-xl">
               <li>link1</li>
               <li>link2</li>
@@ -61,22 +51,6 @@ export default function RootLayout({
               <li>link4</li>
             </ul>
           </div>
-          <div className="relative flex flex-col justify-center p-24">
-            <span className={`${reenieBeanie.className} absolute transform rotate-[340deg] 2xl:text-[6rem] 2xl:top-[5%] 2xl:left-[32%] lg:top-[20%] lg:left-[35%] lg:text-[3rem] xl:top-[10%] xl:left-[37%] xl:text-[5rem]`}
-            >
-              Joe
-            </span>
-            <p className={`${orbitron.className} first-name text-[5vw] leading-[6rem] xl:text-[5vw] xl:leading-[5vw] lg:text-[4vw] lg:leading-[6vw]`}
-            >
-              <span className="line-through">Joseph</span>
-            </p>
-            <p className={`${orbitron.className} 2xl:text-[9vw] 2xl:leading-[9vw] xl:text-[8vw] xl:leading-[8rem] lg:text-[7vw] lg:leading-[7vw]`}
-            >
-              Robinson
-            </p>
-            <p className="2xl:text-[2rem] 2xl:leading-[2rem] xl:text-[1.75rem] xl:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[1rem]">Software Developer</p>
-          </div>
-          {/* <blockquote><p>"Code is like humor. When you have to explain it, it's bad" -Cory House</p></blockquote> */}
         </header>
         <div>
           {children}
